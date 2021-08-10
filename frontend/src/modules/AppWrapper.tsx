@@ -29,7 +29,7 @@ const App = () => {
 
 	return (
 		<BrowserRouter>
-			<ErrorBoundary FallbackComponent={ErrorFallback}>
+			<ErrorBoundary FallbackComponent={ErrorFallback} >
 				<Suspense fallback={<CustomSpinner size="large" tip="Loading..." />}>
 					<Route path={"/"}>
 						<Switch>
@@ -51,7 +51,7 @@ const App = () => {
 											<Route
 												path={ROUTES.INSTRUMENTATION}
 												exact
-												component={IntstrumentationPage}
+												component={InstrumentationPage}
 											/>
 											<Route
 												path={ROUTES.USAGE_EXPLORER}

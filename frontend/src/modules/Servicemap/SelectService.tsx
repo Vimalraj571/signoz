@@ -34,6 +34,7 @@ const defaultOption = {
 };
 
 const SelectService = (props: SelectServiceProps) => {
+	throw new Error('Boom');
 	const [selectedVal, setSelectedVal] = useState<string>(defaultOption.serviceName);
 	const { zoomToService, zoomToDefault } = props;
 	const services = cloneDeep(props.services);
